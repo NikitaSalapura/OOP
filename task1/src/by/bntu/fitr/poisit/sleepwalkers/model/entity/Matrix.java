@@ -13,8 +13,8 @@ public class Matrix {
         this.array = array;
     }
 
-    public Matrix(int rows, int columns) {
-        array = new double[rows][columns];
+    public Matrix(int row, int column) {
+        array = new double[row][column];
     }
 
     public Matrix(int size) {

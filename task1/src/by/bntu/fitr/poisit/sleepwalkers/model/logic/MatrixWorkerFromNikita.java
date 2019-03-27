@@ -3,7 +3,8 @@ package by.bntu.fitr.poisit.sleepwalkers.model.logic;
 import by.bntu.fitr.poisit.sleepwalkers.model.entity.Matrix;
 
 public class MatrixWorkerFromNikita {
-    public static boolean checkRowForLessElements(Matrix matrix, int i, int j, int i_offset) {
+    private static boolean checkRowForLessElements
+            (Matrix matrix, int i, int j, int i_offset) {
         return j > 0 && matrix.getElement(i + i_offset, j - 1)
                     < matrix.getElement(i, j)
                 || matrix.getElement(i + i_offset, j) < matrix.getElement(i, j)
@@ -12,7 +13,7 @@ public class MatrixWorkerFromNikita {
                     < matrix.getElement(i, j);
     }
 
-    public static boolean IsLocalMin(Matrix matrix, int i, int j) {
+    private static boolean IsLocalMin(Matrix matrix, int i, int j) {
         return !(i > 0 && checkRowForLessElements(matrix, i, j, -1)
                 || checkRowForLessElements(matrix, i, j, 0)
                 || i < matrix.getCountRows() - 1

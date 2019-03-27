@@ -94,7 +94,7 @@ class MatrixWorkerFromVladTest {
         Matrix expResult = new Matrix(new double[][]{{3, 5, 5},
                 {5, 8, 5},
                 {7, 5, 7}});
-        Matrix result = MatrixWorkerFromVlad.changePosOfCentralAndMaxElement(matrix);
-        assertEquals(expResult.toString(), result.toString());
+        MatrixWorkerFromVlad.changePosOfCentralAndMaxElement(matrix);
+        assertEquals(expResult.toString(), matrix.toString());
     }
 }
