@@ -1,7 +1,7 @@
 package by.bntu.fitr.poisit.sleepwalkers.task5.model.entity;
 
 import by.bntu.fitr.poisit.sleepwalkers.task5.model.exception.ArrayDimensionException;
-import by.bntu.fitr.poisit.sleepwalkers.task5.model.exception.NullArrayException;
+import by.bntu.fitr.poisit.sleepwalkers.task5.model.exception.NullException;
 
 import java.util.Arrays;
 
@@ -22,14 +22,14 @@ public class DecorationsContainer {
         array = new Decoration[size];
     }
 
-    public DecorationsContainer(Decoration[] array) throws NullArrayException {
+    public DecorationsContainer(Decoration[] array) throws NullException {
         checkNull(array);
         this.array = Arrays.copyOf(array, array.length);
         System.arraycopy(array, 0, this.array, 0, array.length);
     }
 
     public DecorationsContainer(DecorationsContainer decorationsContainer)
-            throws NullArrayException {
+            throws NullException {
         this(decorationsContainer.array);
     }
 
@@ -54,9 +54,9 @@ public class DecorationsContainer {
         }
     }
 
-    private void checkNull(Decoration[] array) throws NullArrayException {
+    private void checkNull(Decoration[] array) throws NullException {
         if (array == null) {
-            throw new NullArrayException(NULL_EXCEPTION_MSG);
+            throw new NullException(NULL_EXCEPTION_MSG);
         }
     }
 

@@ -3,10 +3,8 @@ package by.bntu.fitr.poisit.sleepwalkers.task5.model.logic;
 import by.bntu.fitr.poisit.sleepwalkers.task5.model.entity.*;
 import by.bntu.fitr.poisit.sleepwalkers.task5.model.exception.ArrayDimensionException;
 import by.bntu.fitr.poisit.sleepwalkers.task5.model.exception.InvalidValueException;
-import by.bntu.fitr.poisit.sleepwalkers.task5.model.exception.NullArrayException;
+import by.bntu.fitr.poisit.sleepwalkers.task5.model.exception.NullException;
 import org.junit.jupiter.api.Test;
-
-import java.lang.reflect.Executable;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -21,17 +19,17 @@ class DecorationsContainerWorkerTest {
             new Toy()});
 
     DecorationsContainerWorkerTest()
-            throws InvalidValueException, NullArrayException {
+            throws InvalidValueException, NullException {
     }
 
     @Test
-    void getTotalPrice1() throws ArrayDimensionException, NullArrayException {
-        assertThrows(NullArrayException.class,
+    void getTotalPrice1() throws ArrayDimensionException, NullException {
+        assertThrows(NullException.class,
                 () -> DecorationsContainerWorker.getTotalPrice(null));
     }
 
     @Test
-    void getTotalPrice2() throws ArrayDimensionException, NullArrayException {
+    void getTotalPrice2() throws ArrayDimensionException, NullException {
         double expected = 19.42;
         double result = DecorationsContainerWorker
                 .getTotalPrice(decorationsContainer);
@@ -39,7 +37,7 @@ class DecorationsContainerWorkerTest {
     }
 
     @Test
-    void getRichestDecoration() throws ArrayDimensionException, NullArrayException {
+    void getRichestDecoration() throws ArrayDimensionException, NullException {
         Decoration expected = decorationsContainer.getElement(0);
         Decoration result = DecorationsContainerWorker
                 .getRichestDecoration(decorationsContainer);
@@ -47,7 +45,7 @@ class DecorationsContainerWorkerTest {
     }
 
     @Test
-    void getTotalWeight() throws ArrayDimensionException, NullArrayException {
+    void getTotalWeight() throws ArrayDimensionException, NullException {
         double expected = 320;
         double result = DecorationsContainerWorker
                 .getTotalWeight(decorationsContainer);
