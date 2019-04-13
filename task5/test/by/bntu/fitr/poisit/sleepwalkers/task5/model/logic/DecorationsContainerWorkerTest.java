@@ -6,6 +6,8 @@ import by.bntu.fitr.poisit.sleepwalkers.task5.model.exception.InvalidValueExcept
 import by.bntu.fitr.poisit.sleepwalkers.task5.model.exception.NullArrayException;
 import org.junit.jupiter.api.Test;
 
+import java.lang.reflect.Executable;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 class DecorationsContainerWorkerTest {
@@ -23,7 +25,13 @@ class DecorationsContainerWorkerTest {
     }
 
     @Test
-    void getTotalPrice() throws ArrayDimensionException {
+    void getTotalPrice1() throws ArrayDimensionException, NullArrayException {
+        assertThrows(NullArrayException.class,
+                () -> DecorationsContainerWorker.getTotalPrice(null));
+    }
+
+    @Test
+    void getTotalPrice2() throws ArrayDimensionException, NullArrayException {
         double expected = 19.42;
         double result = DecorationsContainerWorker
                 .getTotalPrice(decorationsContainer);
@@ -31,7 +39,7 @@ class DecorationsContainerWorkerTest {
     }
 
     @Test
-    void getRichestDecoration() throws ArrayDimensionException {
+    void getRichestDecoration() throws ArrayDimensionException, NullArrayException {
         Decoration expected = decorationsContainer.getElement(0);
         Decoration result = DecorationsContainerWorker
                 .getRichestDecoration(decorationsContainer);
@@ -39,7 +47,7 @@ class DecorationsContainerWorkerTest {
     }
 
     @Test
-    void getTotalWeight() throws ArrayDimensionException {
+    void getTotalWeight() throws ArrayDimensionException, NullArrayException {
         double expected = 320;
         double result = DecorationsContainerWorker
                 .getTotalWeight(decorationsContainer);

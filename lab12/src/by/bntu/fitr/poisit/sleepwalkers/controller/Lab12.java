@@ -8,9 +8,12 @@ import by.bntu.fitr.poisit.sleepwalkers.model.exception.MatrixDimensionException
 import by.bntu.fitr.poisit.sleepwalkers.util.UserInput;
 import by.bntu.fitr.poisit.sleepwalkers.view.Printer;
 
+import org.apache.log4j.Layout;
+
 
 public class Lab12 {
     public static void main(String[] args) {
+
         try {
             int row = UserInput.inputInt("Enter amount of rows: ");
             int column = UserInput.inputInt("Enter amount of columns: ");
