@@ -38,7 +38,7 @@ public class Torch extends Decoration {
     @Override
     public String toString() {
         return "Torch{" + super.toString() +
-                ",shape='" + size + '\'' +
+                ",size='" + size + '\'' +
                 '}';
     }
 }
