@@ -1,12 +1,34 @@
 package by.bntu.fitr.poisit.sleepwalkers.model.logic;
 
 import by.bntu.fitr.poisit.sleepwalkers.model.entity.Matrix;
-import by.bntu.fitr.poisit.sleepwalkers.util.MatrixDimensionException;
+import by.bntu.fitr.poisit.sleepwalkers.model.exception.MatrixDimensionException;
+import by.bntu.fitr.poisit.sleepwalkers.model.exception.NullMatrixException;
 
 import java.util.Arrays;
+import java.util.Random;
 
 
 public class MatrixWorker {
+    public static final double ROUNDING = 100;
+
+    public static Matrix setRandomValues(Matrix matrix, double min, double max)
+            throws MatrixDimensionException {
+        Matrix newMatrix = new Matrix(matrix.getRowsCount(), matrix.getColumnsCount());
+        Random random = new Random();
+        if (min > max) {
+            min += max;
+            max = min - max;
+            min -= max;
+        }
+        for (int i = 0; i < newMatrix.getRowsCount(); i++) {
+            for (int j = 0; j < newMatrix.getColumnsCount(); j++) {
+                newMatrix.setElement(i, j, Math.round
+                        ((random.nextDouble() * (max - min) + min)
+                                * ROUNDING) / ROUNDING);
+            }
+        }
+        return newMatrix;
+    }
 
     private static int[] addElementToArray(int[] array, int element) {
         array = Arrays.copyOf(array, array.length + 1);
@@ -23,7 +45,7 @@ public class MatrixWorker {
 
     //a19
     private static int[] getIncreasingRowIndex(Matrix matrix)
-            throws MatrixDimensionException{
+            throws MatrixDimensionException {
         int[] rowIndex = {};
         for (int i = 0; i < matrix.getRowsCount(); i++) {
             for (int j = 1; j < matrix.getColumnsCount(); j++) {
@@ -39,7 +61,7 @@ public class MatrixWorker {
     }
 
     private static double[] getRowsMaxElement(Matrix matrix, int[] rowIndex)
-            throws MatrixDimensionException{
+            throws MatrixDimensionException {
         double[] matrixMax = {};
         double rowMax;
         for (int i : rowIndex) {
@@ -65,7 +87,7 @@ public class MatrixWorker {
     }
 
     public static double getMaxFromIncreasingRows(Matrix matrix)
-            throws MatrixDimensionException{
+            throws MatrixDimensionException {
         double max;
         int[] rowIndex = getIncreasingRowIndex(matrix);
         if (rowIndex.length != 0) {
@@ -80,7 +102,7 @@ public class MatrixWorker {
     //B2
 
     public static Matrix sortMatrixRows(Matrix matrix)
-            throws MatrixDimensionException {
+            throws MatrixDimensionException, NullMatrixException {
         Matrix newMatrix = new Matrix(matrix);
         double storageVariable;
         for (int i = 0; i < newMatrix.getRowsCount() - 1; i++) {
@@ -100,7 +122,7 @@ public class MatrixWorker {
     //a 2 vl
 
     private static int[] getRowIndexWithNotEvenElements(Matrix matrix)
-            throws MatrixDimensionException{
+            throws MatrixDimensionException {
         int[] rowIndex = {};
         for (int i = 0; i < matrix.getRowsCount(); i++) {
             for (int j = 0; j < matrix.getColumnsCount(); j++) {
@@ -116,7 +138,7 @@ public class MatrixWorker {
     }
 
     private static double[] getRowsElementsSum(Matrix matrix, int[] rowIndex)
-            throws MatrixDimensionException{
+            throws MatrixDimensionException {
         double[] sum = {};
         double rowSum;
         for (int i : rowIndex) {
@@ -130,7 +152,7 @@ public class MatrixWorker {
     }
 
     public static double getMaxElementsSumOfNotEvenRows(Matrix matrix)
-            throws MatrixDimensionException{
+            throws MatrixDimensionException {
         double max;
         int[] rowIndex = getRowIndexWithNotEvenElements(matrix);
         if (rowIndex.length != 0) {
@@ -152,7 +174,7 @@ public class MatrixWorker {
     }
 
     public static boolean isSymmetrical(Matrix matrix)
-            throws MatrixDimensionException{
+            throws MatrixDimensionException {
         boolean answer = true;
         if (matrix.getRowsCount() != matrix.getColumnsCount()) {
             answer = false;
@@ -169,7 +191,7 @@ public class MatrixWorker {
 
 
     private static int[] getPosOfMaxElementOfMainDiagonal(Matrix matrix)
-            throws MatrixDimensionException{
+            throws MatrixDimensionException {
         double maxElementOfMainDiagonal = matrix.getElement(0, 0);
         int[] posOfMaxElementOfMainDiagonal = new int[2];
         for (int i = 1; i < getUsableNumber(matrix); i++) {
@@ -183,7 +205,7 @@ public class MatrixWorker {
     }
 
     private static int[] getPosOfMaxElementOfIncidentalDiagonal(Matrix matrix)
-            throws MatrixDimensionException{
+            throws MatrixDimensionException {
         double maxElementOfIncidentalDiagonal =
                 matrix.getElement(0, getUsableNumber(matrix) - 1);
         int[] posOfMaxElementOfIncidentalDiagonal = new int[2];
@@ -198,7 +220,7 @@ public class MatrixWorker {
     }
 
     private static int[] getMaxOfDiagonals(Matrix matrix)
-            throws MatrixDimensionException{
+            throws MatrixDimensionException {
         int[] posOfMaxElementOfMainDiagonal = getPosOfMaxElementOfMainDiagonal(matrix);
         int[] posOfMaxElementOfIncDiagonal = getPosOfMaxElementOfIncidentalDiagonal(matrix);
         double maxElementOfMainDiagonal = matrix.getElement(posOfMaxElementOfMainDiagonal[0], posOfMaxElementOfMainDiagonal[1]);
@@ -214,7 +236,7 @@ public class MatrixWorker {
     }
 
     public static Matrix changePosOfCentralAndMaxElement(Matrix matrix)
-            throws MatrixDimensionException{
+            throws MatrixDimensionException, NullMatrixException {
         Matrix newMatrix = new Matrix(matrix);
         int[] posOfMaxElement = getMaxOfDiagonals(newMatrix);
         int[] posCentralElement = getPosCentralElement(newMatrix);

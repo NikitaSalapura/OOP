@@ -1,9 +1,10 @@
 package by.bntu.fitr.poisit.sleepwalkers.controller;
 
 import by.bntu.fitr.poisit.sleepwalkers.model.entity.Matrix;
+import by.bntu.fitr.poisit.sleepwalkers.model.exception.NullMatrixException;
 import by.bntu.fitr.poisit.sleepwalkers.model.logic.MatrixWorker;
-import by.bntu.fitr.poisit.sleepwalkers.util.InvalidInputException;
-import by.bntu.fitr.poisit.sleepwalkers.util.MatrixDimensionException;
+import by.bntu.fitr.poisit.sleepwalkers.util.exception.InvalidInputException;
+import by.bntu.fitr.poisit.sleepwalkers.model.exception.MatrixDimensionException;
 import by.bntu.fitr.poisit.sleepwalkers.util.UserInput;
 import by.bntu.fitr.poisit.sleepwalkers.view.Printer;
 
@@ -24,7 +25,7 @@ public class Lab12 {
             } else {
                 double min = UserInput.inputInt("Enter a minimum value: ");
                 double max = UserInput.inputInt("Enter a maximum value: ");
-                matrix.setRandomValues(min, max);
+                matrix.setMatrix(MatrixWorker.setRandomValues(matrix, min, max));
             }
             Printer.println(matrix.toString());
 
@@ -34,11 +35,11 @@ public class Lab12 {
             outputDiagonalChangedMatrix(matrix);
             outputSortedMatrix(matrix);
 
-        } catch (InvalidInputException | MatrixDimensionException ex) {
-            Printer.println("" + ex);
+        } catch (InvalidInputException | MatrixDimensionException | NullMatrixException ex) {
+            Printer.println(ex.getMessage());
         }
     }
-    
+
     private static void inputSelf(Matrix matrix)
             throws MatrixDimensionException, InvalidInputException {
         for (int i = 0; i < matrix.getRowsCount(); i++) {
@@ -66,13 +67,13 @@ public class Lab12 {
     }
 
     private static void outputDiagonalChangedMatrix(Matrix matrix)
-            throws MatrixDimensionException {
+            throws MatrixDimensionException, NullMatrixException {
         Printer.println("Matrix with changed diagonal max elements:"
                 + MatrixWorker.changePosOfCentralAndMaxElement(matrix).toString());
     }
 
     private static void outputSortedMatrix(Matrix matrix)
-            throws MatrixDimensionException {
+            throws MatrixDimensionException, NullMatrixException {
         Printer.println("Matrix, sorted by ascending first elements of rows:\n"
                 + MatrixWorker.sortMatrixRows(matrix).toString());
     }

@@ -1,15 +1,17 @@
 package by.bntu.fitr.poisit.sleepwalkers.model.entity;
 
 
-import by.bntu.fitr.poisit.sleepwalkers.util.MatrixDimensionException;
+import by.bntu.fitr.poisit.sleepwalkers.model.exception.MatrixDimensionException;
+import by.bntu.fitr.poisit.sleepwalkers.model.exception.NullMatrixException;
 
 import java.util.Random;
 
 public class Matrix {
     public static final int DEFAULT_SIZE = 5;
-    public static final double ROUNDING = 100;
+//    public static final double ROUNDING = 100;
 
-    private static final String dimensionError = "Wrong matrix dimension!";
+    private static final String DIMENSION_EXCEPTION_MSG = "Wrong matrix dimension!";
+    private static final String NULL_EXCEPTION_MSG = "Null matrix is not allowed!";
     private double[][] array;
 
     public Matrix() {
@@ -17,37 +19,34 @@ public class Matrix {
     }
 
     public Matrix(int row, int column) throws MatrixDimensionException {
-        if (row > 0 && column > 0) {
-            array = new double[row][column];
-        } else {
-            throw new MatrixDimensionException(dimensionError);
-        }
+        checkForPositive(row, column);
+        array = new double[row][column];
     }
 
     public Matrix(int size) throws MatrixDimensionException {
         this(size, size);
     }
 
-    public Matrix(int row, int column, double min, double max)
-            throws MatrixDimensionException {
-        this(row, column);
-        if (min < max) {
-            Random random = new Random();
-            for (int i = 0; i < array.length; i++) {
-                for (int j = 0; j < array[i].length; j++) {
-                    array[i][j] = Math.round
-                            ((random.nextDouble() * (max - min) + min) * ROUNDING) / ROUNDING;
-                }
-            }
-        }
-    }
+//    public Matrix(int row, int column, double min, double max)
+//            throws MatrixDimensionException {
+//        this(row, column);
+//        if (min < max) {
+//            Random random = new Random();
+//            for (int i = 0; i < array.length; i++) {
+//                for (int j = 0; j < array[i].length; j++) {
+//                    array[i][j] = Math.round
+//                            ((random.nextDouble() * (max - min) + min)
+//                                    * ROUNDING) / ROUNDING;
+//                }
+//            }
+//        }
+//    }
 
-    public Matrix(int size, double min, double max) throws MatrixDimensionException {
-        this(size, size, min, max);
-    }
 
-    public Matrix(double[][] array) throws MatrixDimensionException {
-        this(array.length, array[0].length);
+    public Matrix(double[][] array)
+            throws MatrixDimensionException, NullMatrixException {
+        checkNull(array);
+        this.array = new double[array.length][array[0].length];
         for (int i = 0; i < array.length; i++) {
             if (array[i].length >= 0) {
                 System.arraycopy
@@ -56,7 +55,8 @@ public class Matrix {
         }
     }
 
-    public Matrix(Matrix matrix) throws MatrixDimensionException {
+    public Matrix(Matrix matrix)
+            throws MatrixDimensionException, NullMatrixException {
         this(matrix.array);
     }
 
@@ -68,8 +68,20 @@ public class Matrix {
         return array[0].length;
     }
 
+    private void checkForPositive(int i, int j) throws MatrixDimensionException {
+        if (i <= 0 || j <= 0) {
+            throw new MatrixDimensionException(DIMENSION_EXCEPTION_MSG);
+        }
+    }
+
+    private void checkNull(double[][] array) throws NullMatrixException {
+        if (array == null) {
+            throw new NullMatrixException(NULL_EXCEPTION_MSG);
+        }
+    }
+
     private String outOfBoundsMsg(int i, int j) {
-        return dimensionError + "\ni = " + i + ", j = " + j
+        return DIMENSION_EXCEPTION_MSG + "\ni = " + i + ", j = " + j
                 + "\nSize: [" + getRowsCount() + "][" + getColumnsCount() + "]";
     }
 
@@ -92,23 +104,9 @@ public class Matrix {
     public void setMatrix(Matrix matrix) {
         array = new double[matrix.getRowsCount()][matrix.getColumnsCount()];
         for (int i = 0; i < array.length; i++) {
-            if (matrix.array[i].length >= 0) {
-                System.arraycopy
-                        (matrix.array[i], 0, array[i], 0, array[i].length);
-            }
-        }
-    }
+            System.arraycopy
+                    (matrix.array[i], 0, array[i], 0, array[i].length);
 
-    public void setRandomValues(double min, double max) {
-        if (min < max) {
-            Random random = new Random();
-            for (int i = 0; i < array.length; i++) {
-                for (int j = 0; j < array[i].length; j++) {
-                    array[i][j] = Math.round
-                            ((random.nextDouble() * (max - min) + min)
-                                    * ROUNDING) / ROUNDING;
-                }
-            }
         }
     }
 

@@ -1,5 +1,7 @@
 package by.bntu.fitr.poisit.sleepwalkers.util;
 
+import by.bntu.fitr.poisit.sleepwalkers.util.exception.InvalidInputException;
+
 import java.util.Scanner;
 
 public class UserInput {
