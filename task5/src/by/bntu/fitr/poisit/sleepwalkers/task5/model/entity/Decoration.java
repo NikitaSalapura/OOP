@@ -1,8 +1,11 @@
 package by.bntu.fitr.poisit.sleepwalkers.task5.model.entity;
 
 import by.bntu.fitr.poisit.sleepwalkers.task5.model.exception.InvalidValueException;
+import by.bntu.fitr.poisit.sleepwalkers.task5.model.exception.NullException;
+
 
 public class Decoration {
+
     public static final double DEFAULT_PRICE = 1;
     public static final String DEFAULT_COLOR = "undefined";
     public static final double DEFAULT_WEIGHT = 10;

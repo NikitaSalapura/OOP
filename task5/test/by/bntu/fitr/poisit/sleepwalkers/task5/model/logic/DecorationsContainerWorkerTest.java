@@ -11,19 +11,19 @@ import static org.junit.jupiter.api.Assertions.*;
 class DecorationsContainerWorkerTest {
 
     private final DecorationsContainer decorationsContainer
-            = new DecorationsContainer(new Decoration[]{
+            = new DecorationsContainer(
             new ChristmasTree(10.21, 100, "green", 200),
             new Garland(3.21, 100, "blue", 5),
             new Toy(2, 50, "red", "star"),
             new Torch(3, 60, "white", "small"),
-            new Toy()});
+            new Toy());
 
     DecorationsContainerWorkerTest()
             throws InvalidValueException, NullException {
     }
 
     @Test
-    void getTotalPrice1() throws ArrayDimensionException, NullException {
+    void getTotalPrice1() {
         assertThrows(NullException.class,
                 () -> DecorationsContainerWorker.getTotalPrice(null));
     }

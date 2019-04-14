@@ -8,44 +8,43 @@ import java.util.Arrays;
 public class DecorationsContainer {
     public static final int DEFAULT_SIZE = 0;
 
-    private static final String DIMENSION_EXCEPTION_MSG = "Wrong array dimension!";
-    private static final String NULL_EXCEPTION_MSG = "Null array is not allowed!";
+    private static final String DIMENSION_EXCEPTION_MSG = "Wrong listOfDecorations dimension!";
+    private static final String NULL_EXCEPTION_MSG = "Null listOfDecorations is not allowed!";
 
-    private Decoration[] array;
+    private Decoration[] listOfDecorations;
 
     public DecorationsContainer() {
-        array = new Decoration[DEFAULT_SIZE];
+        listOfDecorations = new Decoration[DEFAULT_SIZE];
     }
 
     public DecorationsContainer(int size) throws ArrayDimensionException {
         checkForPositive(size);
-        array = new Decoration[size];
+        listOfDecorations = new Decoration[size];
     }
 
-    public DecorationsContainer(Decoration[] array) throws NullException {
-        checkNull(array);
-        this.array = Arrays.copyOf(array, array.length);
-        System.arraycopy(array, 0, this.array, 0, array.length);
+    public DecorationsContainer(Decoration... listOfDecorations) throws NullException {
+        checkForNonNull(listOfDecorations);
+        initArray(listOfDecorations);
     }
 
     public DecorationsContainer(DecorationsContainer decorationsContainer)
             throws NullException {
-        this(decorationsContainer.array);
+        this(decorationsContainer.listOfDecorations);
     }
 
     public int getSize() {
-        return array.length;
+        return listOfDecorations.length;
     }
 
     public Decoration getElement(int index) throws ArrayDimensionException {
         checkRange(index);
-        return array[index];
+        return listOfDecorations[index];
     }
 
-    public void setElement(int index, Decoration decoration)
+    public void changeElement(int index, Decoration decoration)
             throws ArrayDimensionException {
         checkRange(index);
-        array[index] = decoration;
+        listOfDecorations[index] = decoration;
     }
 
     private void checkForPositive(int size) throws ArrayDimensionException {
@@ -54,7 +53,7 @@ public class DecorationsContainer {
         }
     }
 
-    private void checkNull(Decoration[] array) throws NullException {
+    private void checkForNonNull(Decoration[] array) throws NullException {
         if (array == null) {
             throw new NullException(NULL_EXCEPTION_MSG);
         }
@@ -71,18 +70,43 @@ public class DecorationsContainer {
         }
     }
 
-    public static Decoration[] addElements
-            (Decoration[] array, Decoration... listOfElements) {
-        array = Arrays.copyOf(array, array.length + listOfElements.length);
-        System.arraycopy(listOfElements, 0,
-                array, array.length - listOfElements.length, listOfElements.length);
-        return array;
+    private void add
+            (Decoration... listOfElements) {
+        listOfDecorations = Arrays.copyOf(listOfDecorations,
+                getSize() + listOfElements.length);
+        System.arraycopy(listOfElements, 0, listOfDecorations,
+                getSize() - listOfElements.length, listOfElements.length);
+    }
+
+    private void initArray
+            (Decoration... listOfDecorations) {
+        this.listOfDecorations = Arrays.copyOf(listOfDecorations, listOfDecorations.length);
+        System.arraycopy(listOfDecorations, 0,
+                this.listOfDecorations, 0, listOfDecorations.length);
+    }
+
+    public void addElements
+            (Decoration... listOfElements) throws NullException {
+        checkForNonNull(listOfElements);
+        add(listOfElements);
+    }
+
+    public void removeElement(int index) throws ArrayDimensionException {
+        checkRange(index);
+
+        Decoration[] newArray = new Decoration[getSize() - 1];
+        System.arraycopy(listOfDecorations, 0, newArray, 0, index);
+        System.arraycopy
+                (listOfDecorations, index + 1,
+                        newArray, index, getSize() - index - 1);
+        listOfDecorations = new Decoration[newArray.length];
+        add(newArray);
     }
 
     @Override
     public String toString() {
         StringBuilder builder = new StringBuilder();
-        for (Decoration decoration : array) {
+        for (Decoration decoration : listOfDecorations) {
             builder.append(decoration.toString()).append("\n");
         }
         return builder.toString();
