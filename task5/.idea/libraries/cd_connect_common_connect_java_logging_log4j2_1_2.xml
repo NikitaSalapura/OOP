@@ -1,0 +1,29 @@
+<component name="libraryTable">
+  <library name="cd.connect.common:connect-java-logging-log4j2:1.2" type="repository">
+    <properties maven-id="cd.connect.common:connect-java-logging-log4j2:1.2" />
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/cd/connect/common/connect-java-logging-log4j2/1.2/connect-java-logging-log4j2-1.2.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/cd/connect/composites/java/connect-composite-groovy/1.1/connect-composite-groovy-1.1.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/codehaus/groovy/groovy-all/2.4.10/groovy-all-2.4.10.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/cd/connect/composites/java/connect-composite-log4j2/1.1/connect-composite-log4j2-1.1.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/cd/connect/composites/java/connect-composite-logging/1.1/connect-composite-logging-1.1.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/slf4j/slf4j-api/1.7.25/slf4j-api-1.7.25.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/apache/logging/log4j/log4j-slf4j-impl/2.8.2/log4j-slf4j-impl-2.8.2.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/apache/logging/log4j/log4j-api/2.8.2/log4j-api-2.8.2.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/apache/logging/log4j/log4j-core/2.8.2/log4j-core-2.8.2.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/apache/logging/log4j/log4j-1.2-api/2.8.2/log4j-1.2-api-2.8.2.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/apache/logging/log4j/log4j-jul/2.8.2/log4j-jul-2.8.2.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/com/lmax/disruptor/3.3.6/disruptor-3.3.6.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/cd/connect/common/connect-java-logging/1.1/connect-java-logging-1.1.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/cd/connect/common/connect-java-jackson/1.2/connect-java-jackson-1.2.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/cd/connect/composites/java/connect-composite-jackson/1.3/connect-composite-jackson-1.3.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/com/fasterxml/jackson/core/jackson-core/2.9.8/jackson-core-2.9.8.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/com/fasterxml/jackson/core/jackson-databind/2.9.8/jackson-databind-2.9.8.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/com/fasterxml/jackson/core/jackson-annotations/2.9.8/jackson-annotations-2.9.8.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.9.8/jackson-datatype-jsr310-2.9.8.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/com/fasterxml/jackson/jaxrs/jackson-jaxrs-base/2.9.8/jackson-jaxrs-base-2.9.8.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
