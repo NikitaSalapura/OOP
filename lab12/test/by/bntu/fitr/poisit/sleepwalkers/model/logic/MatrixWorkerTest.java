@@ -34,32 +34,37 @@ class MatrixWorkerTest {
 //        } catch (MatrixDimensionException ex) {
 //            fail();
 //        }
-//
 //    }
 
     @Test
-    void getMaxFromIncreasingRow1() throws MatrixDimensionException {
+    void getMaxFromIncreasingRow0() throws MatrixDimensionException, NullMatrixException {
+        assertThrows(NullMatrixException.class,
+                () -> MatrixWorker.getMaxFromIncreasingRows(null));
+    }
+
+    @Test
+    void getMaxFromIncreasingRow1() throws MatrixDimensionException, NullMatrixException {
         double expected = 100;
         double result = MatrixWorker.getMaxFromIncreasingRows(matrix1);
         assertEquals(expected, result);
     }
 
     @Test
-    void getMaxFromIncreasingRow2() throws MatrixDimensionException {
+    void getMaxFromIncreasingRow2() throws MatrixDimensionException, NullMatrixException {
         double expected = Double.NEGATIVE_INFINITY;
         double result = MatrixWorker.getMaxFromIncreasingRows(matrix2);
         assertEquals(expected, result);
     }
 
     @Test
-    void getMaxSumOfRowElem1() throws MatrixDimensionException {
+    void getMaxSumOfRowElem1() throws MatrixDimensionException, NullMatrixException {
         double expected = 85;
         double result = MatrixWorker.getMaxElementsSumOfNotEvenRows(matrix2);
         assertEquals(expected, result);
     }
 
     @Test
-    void getMaxSumOfRowElem2() throws MatrixDimensionException {
+    void getMaxSumOfRowElem2() throws MatrixDimensionException, NullMatrixException {
         double expected = Double.NEGATIVE_INFINITY;
         double result = MatrixWorker.getMaxElementsSumOfNotEvenRows(matrix1);
         assertEquals(expected, result);
@@ -88,7 +93,7 @@ class MatrixWorkerTest {
     }
 
     @Test
-    void isSymmetry2() throws MatrixDimensionException {
+    void isSymmetry2() throws MatrixDimensionException, NullMatrixException {
         assertFalse(MatrixWorker.isSymmetrical(matrix1));
     }
 

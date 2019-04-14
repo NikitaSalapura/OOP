@@ -6,7 +6,23 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8375dc7f-bf41-46a5-a64f-00e1689f27cc" name="Default Changelist" comment="" />
+    <list default="true" id="8375dc7f-bf41-46a5-a64f-00e1689f27cc" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab12.iml" beforeDir="false" afterPath="$PROJECT_DIR$/lab12.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/lab12_jar/lab12.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/lab12_jar/lab12.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lab12/META-INF/lab12.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lab12/by/bntu/fitr/poisit/sleepwalkers/controller/Lab12.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/lab12/by/bntu/fitr/poisit/sleepwalkers/controller/Lab12.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lab12/by/bntu/fitr/poisit/sleepwalkers/model/entity/Matrix.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/lab12/by/bntu/fitr/poisit/sleepwalkers/model/entity/Matrix.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lab12/by/bntu/fitr/poisit/sleepwalkers/model/logic/MatrixWorker.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/lab12/by/bntu/fitr/poisit/sleepwalkers/model/logic/MatrixWorker.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lab12/by/bntu/fitr/poisit/sleepwalkers/util/exception/InvalidInputException.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/lab12/by/bntu/fitr/poisit/sleepwalkers/util/exception/InvalidInputException.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/lab12/by/bntu/fitr/poisit/sleepwalkers/model/logic/MatrixWorkerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/lab12/by/bntu/fitr/poisit/sleepwalkers/model/logic/MatrixWorkerTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/by/bntu/fitr/poisit/sleepwalkers/controller/Lab12.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/bntu/fitr/poisit/sleepwalkers/controller/Lab12.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/by/bntu/fitr/poisit/sleepwalkers/model/entity/Matrix.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/bntu/fitr/poisit/sleepwalkers/model/entity/Matrix.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/by/bntu/fitr/poisit/sleepwalkers/model/logic/MatrixWorker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/bntu/fitr/poisit/sleepwalkers/model/logic/MatrixWorker.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/by/bntu/fitr/poisit/sleepwalkers/util/UserInput.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/bntu/fitr/poisit/sleepwalkers/util/UserInput.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/by/bntu/fitr/poisit/sleepwalkers/view/Printer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/bntu/fitr/poisit/sleepwalkers/view/Printer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/by/bntu/fitr/poisit/sleepwalkers/model/logic/MatrixWorkerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/by/bntu/fitr/poisit/sleepwalkers/model/logic/MatrixWorkerTest.java" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -16,20 +32,70 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="450">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/log4j.properties">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/by/bntu/fitr/poisit/sleepwalkers/controller/Lab12.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="125">
-              <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+            <state relative-caret-position="476">
+              <caret line="62" column="42" selection-start-line="62" selection-start-column="42" selection-end-line="62" selection-end-column="42" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/by/bntu/fitr/poisit/sleepwalkers/util/exception/InvalidInputException.java">
+        <entry file="file://$PROJECT_DIR$/src/by/bntu/fitr/poisit/sleepwalkers/view/Printer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="8" selection-start-line="8" selection-end-line="8" />
+            <state relative-caret-position="250">
+              <caret line="10" column="5" lean-forward="true" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#114#115#0" expanded="true" />
+                <element signature="e#153#154#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/by/bntu/fitr/poisit/sleepwalkers/util/UserInput.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="254">
+              <caret line="24" column="30" lean-forward="true" selection-start-line="24" selection-start-column="30" selection-end-line="24" selection-end-column="30" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/log4j.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="375">
+              <caret line="15" column="47" lean-forward="true" selection-start-line="15" selection-start-column="47" selection-end-line="15" selection-end-column="47" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/by/bntu/fitr/poisit/sleepwalkers/model/logic/MatrixWorker.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="310">
+              <caret line="175" column="9" lean-forward="true" selection-start-line="175" selection-start-column="9" selection-end-line="175" selection-end-column="9" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/by/bntu/fitr/poisit/sleepwalkers/model/logic/MatrixWorkerTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="125">
+              <caret line="47" column="37" lean-forward="true" selection-start-line="47" selection-start-column="37" selection-end-line="47" selection-end-column="37" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -56,21 +122,21 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/by/bntu/fitr/poisit/sleepwalkers/view/Printer.java" />
         <option value="$PROJECT_DIR$/src/by/bntu/fitr/poisit/sleepwalkers/model/logic/ArrayWorker.java" />
         <option value="$PROJECT_DIR$/src/by/bntu/fitr/poisit/sleepwalkers/util/ArrayInitializer.java" />
         <option value="$PROJECT_DIR$/src/by/bntu/fitr/poisit/sleepwalkers/util/MatrixIndexValueException.java" />
         <option value="$PROJECT_DIR$/src/by/bntu/fitr/poisit/sleepwalkers/util/InvalidInputException.java" />
-        <option value="$PROJECT_DIR$/src/by/bntu/fitr/poisit/sleepwalkers/util/UserInput.java" />
         <option value="$PROJECT_DIR$/src/by/bntu/fitr/poisit/sleepwalkers/util/MatrixDimensionException.java" />
-        <option value="$PROJECT_DIR$/src/by/bntu/fitr/poisit/sleepwalkers/model/exception/MatrixDimensionException.java" />
-        <option value="$PROJECT_DIR$/test/by/bntu/fitr/poisit/sleepwalkers/model/logic/MatrixWorkerTest.java" />
-        <option value="$PROJECT_DIR$/src/by/bntu/fitr/poisit/sleepwalkers/model/logic/MatrixWorker.java" />
-        <option value="$PROJECT_DIR$/src/by/bntu/fitr/poisit/sleepwalkers/model/entity/Matrix.java" />
-        <option value="$PROJECT_DIR$/src/by/bntu/fitr/poisit/sleepwalkers/model/exception/NullMatrixException.java" />
-        <option value="$PROJECT_DIR$/src/by/bntu/fitr/poisit/sleepwalkers/controller/Lab12.java" />
         <option value="$PROJECT_DIR$/src/by/bntu/fitr/poisit/sleepwalkers/util/exception/InvalidInputException.java" />
+        <option value="$PROJECT_DIR$/src/by/bntu/fitr/poisit/sleepwalkers/model/entity/Matrix.java" />
+        <option value="$PROJECT_DIR$/src/by/bntu/fitr/poisit/sleepwalkers/model/exception/MatrixDimensionException.java" />
+        <option value="$PROJECT_DIR$/src/by/bntu/fitr/poisit/sleepwalkers/model/exception/NullMatrixException.java" />
+        <option value="$PROJECT_DIR$/src/by/bntu/fitr/poisit/sleepwalkers/model/logic/MatrixWorker.java" />
+        <option value="$PROJECT_DIR$/test/by/bntu/fitr/poisit/sleepwalkers/model/logic/MatrixWorkerTest.java" />
+        <option value="$PROJECT_DIR$/src/by/bntu/fitr/poisit/sleepwalkers/util/UserInput.java" />
+        <option value="$PROJECT_DIR$/src/by/bntu/fitr/poisit/sleepwalkers/view/Printer.java" />
         <option value="$PROJECT_DIR$/src/log4j.properties" />
+        <option value="$PROJECT_DIR$/src/by/bntu/fitr/poisit/sleepwalkers/controller/Lab12.java" />
       </list>
     </option>
   </component>
@@ -86,7 +152,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -125,14 +190,6 @@
               <item name="lab12" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="sleepwalkers" type="462c0819:PsiDirectoryNode" />
-              <item name="util" type="462c0819:PsiDirectoryNode" />
-              <item name="exception" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="lab12" type="b2602c69:ProjectViewProjectNode" />
-              <item name="lab12" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="sleepwalkers" type="462c0819:PsiDirectoryNode" />
               <item name="view" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -146,10 +203,15 @@
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="logic" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="lab12" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -157,11 +219,11 @@
     <property name="Repository.Attach.Annotations" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1555187934343" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1555247468895" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="Global Libraries" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
@@ -170,11 +232,22 @@
     <key name="CreateTestDialog.RecentsKey">
       <recent name="by.bntu.fitr.poisit.sleepwalkers.model.logic" />
     </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\BNTU\OOP\forGit\lab12\src\resources" />
+      <recent name="D:\BNTU\OOP\forGit\lab12\src" />
+      <recent name="D:\BNTU\OOP\forGit\lab12\src\by\bntu\fitr\poisit\sleepwalkers\resources" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="by.bntu.fitr.poisit.sleepwalkers.model.entity" />
     </key>
-    <key name="CreateTestDialog.Recents.Supers">
-      <recent name="" />
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\БНТУ\ООП\forGit\lab12\src\by\bntu\fitr\poisit\sleepwalkers\controller" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -218,7 +291,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MatrixWorkerTest.getMaxSumOfRowElem1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MatrixWorkerTest.getMaxFromIncreasingRow0" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="lab12" />
       <extension name="coverage">
         <pattern>
@@ -228,7 +301,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="by.bntu.fitr.poisit.sleepwalkers.model.logic" />
       <option name="MAIN_CLASS_NAME" value="by.bntu.fitr.poisit.sleepwalkers.model.logic.MatrixWorkerTest" />
-      <option name="METHOD_NAME" value="getMaxSumOfRowElem1" />
+      <option name="METHOD_NAME" value="getMaxFromIncreasingRow0" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -269,10 +342,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.Lab12" />
+        <item itemvalue="JUnit.MatrixWorkerTest.getMaxFromIncreasingRow0" />
         <item itemvalue="JUnit.MatrixWorkerTest" />
         <item itemvalue="JUnit.MatrixWorkerTest.sortMatrixRows" />
         <item itemvalue="JUnit.MatrixWorkerTest.testChangePosOfCentralAndMaxElement" />
-        <item itemvalue="JUnit.MatrixWorkerTest.getMaxSumOfRowElem1" />
       </list>
     </recent_temporary>
   </component>
@@ -326,9 +399,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="MatrixWorkerTest_testChangePosOfCentralAndMaxElement - 2019.04.06 at 19h 12m 13s.xml">
-      <configuration name="MatrixWorkerTest.testChangePosOfCentralAndMaxElement" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="MatrixWorkerTest_testChangePosOfCentralAndMaxElement - 2019.04.06 at 19h 13m 31s.xml">
       <configuration name="MatrixWorkerTest.testChangePosOfCentralAndMaxElement" configurationId="JUnit" />
     </history-entry>
@@ -356,6 +426,9 @@
     <history-entry file="MatrixWorkerTest - 2019.04.07 at 17h 40m 38s.xml">
       <configuration name="MatrixWorkerTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="MatrixWorkerTest_getMaxFromIncreasingRow0 - 2019.04.14 at 00h 26m 06s.xml">
+      <configuration name="MatrixWorkerTest.getMaxFromIncreasingRow0" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1618" height="870" extended-state="6" />
@@ -367,7 +440,7 @@
       <window_info id="simpleUML" order="3" show_stripe_button="false" />
       <window_info id="Capture Tool" order="4" />
       <window_info id="Favorites" order="5" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="6" sideWeight="0.4992636" visible="true" weight="0.2254902" />
+      <window_info active="true" content_ui="combo" id="Project" order="6" sideWeight="0.4992636" visible="true" weight="0.23529412" />
       <window_info id="Structure" order="7" sideWeight="0.50073636" side_tool="true" weight="0.26862746" />
       <window_info anchor="bottom" id="Thumbnails" order="0" weight="0.3298969" />
       <window_info anchor="bottom" id="Terminal" order="1" />
@@ -376,8 +449,8 @@
       <window_info anchor="bottom" id="Messages" order="4" weight="0.32988167" />
       <window_info anchor="bottom" id="Message" order="5" />
       <window_info anchor="bottom" id="Find" order="6" weight="0.3298969" />
-      <window_info anchor="bottom" id="Run" order="7" sideWeight="0.4993464" weight="0.35059172" />
-      <window_info anchor="bottom" id="Debug" order="8" weight="0.33873343" />
+      <window_info anchor="bottom" id="Run" order="7" sideWeight="0.4993464" weight="0.40236688" />
+      <window_info anchor="bottom" id="Debug" order="8" weight="0.3372781" />
       <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="10" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="11" />
@@ -426,13 +499,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="214">
           <caret line="56" column="50" lean-forward="true" selection-start-line="56" selection-start-column="50" selection-end-line="56" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/lang/Double.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="214">
-          <caret line="61" column="16" selection-start-line="61" selection-start-column="16" selection-end-line="61" selection-end-column="16" />
         </state>
       </provider>
     </entry>
@@ -567,44 +633,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/by/bntu/fitr/poisit/sleepwalkers/view/Printer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/by/bntu/fitr/poisit/sleepwalkers/util/UserInput.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="20" selection-start-line="20" selection-end-line="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/by/bntu/fitr/poisit/sleepwalkers/model/logic/MatrixWorker.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="21" column="9" selection-start-line="21" selection-start-column="9" selection-end-line="21" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/by/bntu/fitr/poisit/sleepwalkers/model/logic/MatrixWorkerTest.java">
+    <entry file="file://$PROJECT_DIR$/src/by/bntu/fitr/poisit/sleepwalkers/util/exception/InvalidInputException.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
-          <caret line="11" column="28" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/by/bntu/fitr/poisit/sleepwalkers/model/entity/Matrix.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        <state relative-caret-position="151">
+          <caret line="70" column="47" selection-start-line="70" selection-start-column="47" selection-end-line="70" selection-end-column="47" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -613,39 +652,89 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/by/bntu/fitr/poisit/sleepwalkers/model/exception/MatrixDimensionException.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="3" selection-start-line="3" selection-end-line="10" selection-end-column="5" />
+        <state relative-caret-position="125">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="13" />
+          <folding>
+            <element signature="e#156#157#0" expanded="true" />
+            <element signature="e#179#180#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/by/bntu/fitr/poisit/sleepwalkers/model/exception/NullMatrixException.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="1" selection-start-line="10" selection-start-column="1" selection-end-line="11" />
+        <state relative-caret-position="50">
+          <caret line="2" column="32" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="32" />
+          <folding>
+            <element signature="e#145#146#0" expanded="true" />
+            <element signature="e#168#169#0" expanded="true" />
+            <element signature="e#218#219#0" expanded="true" />
+            <element signature="e#248#249#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/by/bntu/fitr/poisit/sleepwalkers/controller/log4j.properties" />
+    <entry file="file://$PROJECT_DIR$/src/log4j.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="15" column="47" lean-forward="true" selection-start-line="15" selection-start-column="47" selection-end-line="15" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/by/bntu/fitr/poisit/sleepwalkers/view/Printer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="10" column="5" lean-forward="true" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#114#115#0" expanded="true" />
+            <element signature="e#153#154#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/by/bntu/fitr/poisit/sleepwalkers/controller/Lab12.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="15" selection-start-line="15" selection-end-line="15" />
+        <state relative-caret-position="476">
+          <caret line="62" column="42" selection-start-line="62" selection-start-column="42" selection-end-line="62" selection-end-column="42" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/by/bntu/fitr/poisit/sleepwalkers/util/exception/InvalidInputException.java">
+    <entry file="file://$PROJECT_DIR$/src/by/bntu/fitr/poisit/sleepwalkers/model/logic/MatrixWorker.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
+        <state relative-caret-position="310">
+          <caret line="175" column="9" lean-forward="true" selection-start-line="175" selection-start-column="9" selection-end-line="175" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/log4j.properties">
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/lang/Double.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="212">
+          <caret line="61" column="31" selection-start-line="61" selection-start-column="31" selection-end-line="61" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/by/bntu/fitr/poisit/sleepwalkers/model/logic/MatrixWorkerTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="125">
-          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+          <caret line="47" column="37" lean-forward="true" selection-start-line="47" selection-start-column="37" selection-end-line="47" selection-end-column="37" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/by/bntu/fitr/poisit/sleepwalkers/util/UserInput.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="254">
+          <caret line="24" column="30" lean-forward="true" selection-start-line="24" selection-start-column="30" selection-end-line="24" selection-end-column="30" />
         </state>
       </provider>
     </entry>
@@ -709,7 +798,6 @@
             <option name="proportions">
               <list>
                 <option value="0.2" />
-                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>

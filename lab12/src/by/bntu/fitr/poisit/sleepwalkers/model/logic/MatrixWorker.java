@@ -11,8 +11,18 @@ import java.util.Random;
 public class MatrixWorker {
     public static final double ROUNDING = 100;
 
+    private static final String NULL_EXCEPTION_MSG = "Null is not allowed!";
+
+    private static void checkForNull(Matrix matrix)
+            throws NullMatrixException {
+        if (matrix == null) {
+            throw new NullMatrixException(NULL_EXCEPTION_MSG);
+        }
+    }
+
     public static Matrix setRandomValues(Matrix matrix, double min, double max)
-            throws MatrixDimensionException {
+            throws MatrixDimensionException, NullMatrixException {
+        checkForNull(matrix);
         Matrix newMatrix = new Matrix(matrix.getRowsCount(), matrix.getColumnsCount());
         Random random = new Random();
         if (min > max) {
@@ -87,7 +97,8 @@ public class MatrixWorker {
     }
 
     public static double getMaxFromIncreasingRows(Matrix matrix)
-            throws MatrixDimensionException {
+            throws MatrixDimensionException, NullMatrixException {
+        checkForNull(matrix);
         double max;
         int[] rowIndex = getIncreasingRowIndex(matrix);
         if (rowIndex.length != 0) {
@@ -103,6 +114,7 @@ public class MatrixWorker {
 
     public static Matrix sortMatrixRows(Matrix matrix)
             throws MatrixDimensionException, NullMatrixException {
+        checkForNull(matrix);
         Matrix newMatrix = new Matrix(matrix);
         double storageVariable;
         for (int i = 0; i < newMatrix.getRowsCount() - 1; i++) {
@@ -152,7 +164,8 @@ public class MatrixWorker {
     }
 
     public static double getMaxElementsSumOfNotEvenRows(Matrix matrix)
-            throws MatrixDimensionException {
+            throws MatrixDimensionException, NullMatrixException {
+        checkForNull(matrix);
         double max;
         int[] rowIndex = getRowIndexWithNotEvenElements(matrix);
         if (rowIndex.length != 0) {
@@ -174,7 +187,8 @@ public class MatrixWorker {
     }
 
     public static boolean isSymmetrical(Matrix matrix)
-            throws MatrixDimensionException {
+            throws MatrixDimensionException, NullMatrixException {
+        checkForNull(matrix);
         boolean answer = true;
         if (matrix.getRowsCount() != matrix.getColumnsCount()) {
             answer = false;
@@ -237,6 +251,7 @@ public class MatrixWorker {
 
     public static Matrix changePosOfCentralAndMaxElement(Matrix matrix)
             throws MatrixDimensionException, NullMatrixException {
+        checkForNull(matrix);
         Matrix newMatrix = new Matrix(matrix);
         int[] posOfMaxElement = getMaxOfDiagonals(newMatrix);
         int[] posCentralElement = getPosCentralElement(newMatrix);

@@ -6,7 +6,11 @@ import java.util.Scanner;
 
 public class UserInput {
 
-    private static Scanner scanner = new Scanner(System.in);
+    private static Scanner scanner;
+
+    static {
+        scanner = new Scanner(System.in);
+    }
 
     public static int inputInt(String msg) throws InvalidInputException {
         System.out.print(msg);

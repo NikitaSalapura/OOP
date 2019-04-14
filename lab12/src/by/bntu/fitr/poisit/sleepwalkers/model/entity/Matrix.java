@@ -4,8 +4,6 @@ package by.bntu.fitr.poisit.sleepwalkers.model.entity;
 import by.bntu.fitr.poisit.sleepwalkers.model.exception.MatrixDimensionException;
 import by.bntu.fitr.poisit.sleepwalkers.model.exception.NullMatrixException;
 
-import java.util.Random;
-
 public class Matrix {
     public static final int DEFAULT_SIZE = 5;
 //    public static final double ROUNDING = 100;
@@ -45,7 +43,7 @@ public class Matrix {
 
     public Matrix(double[][] array)
             throws MatrixDimensionException, NullMatrixException {
-        checkNull(array);
+        checkForNull(array);
         this.array = new double[array.length][array[0].length];
         for (int i = 0; i < array.length; i++) {
             if (array[i].length >= 0) {
@@ -70,11 +68,11 @@ public class Matrix {
 
     private void checkForPositive(int i, int j) throws MatrixDimensionException {
         if (i <= 0 || j <= 0) {
-            throw new MatrixDimensionException(DIMENSION_EXCEPTION_MSG);
+            throw new MatrixDimensionException();
         }
     }
 
-    private void checkNull(double[][] array) throws NullMatrixException {
+    private void checkForNull(double[][] array) throws NullMatrixException {
         if (array == null) {
             throw new NullMatrixException(NULL_EXCEPTION_MSG);
         }
