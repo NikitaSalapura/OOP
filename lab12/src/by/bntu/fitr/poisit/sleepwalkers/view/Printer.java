@@ -1,6 +1,5 @@
 package by.bntu.fitr.poisit.sleepwalkers.view;
 
-import by.bntu.fitr.poisit.sleepwalkers.controller.Lab12;
 import org.apache.log4j.Logger;
 
 public class Printer {

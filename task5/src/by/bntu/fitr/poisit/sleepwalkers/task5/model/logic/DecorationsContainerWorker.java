@@ -33,6 +33,7 @@ public class DecorationsContainerWorker {
         int indexOfRichest = 0;
         for (int i = 0; i < decorationsContainer.getSize(); i++) {
             if (maxPrice < decorationsContainer.getElement(i).getPrice()) {
+                maxPrice = decorationsContainer.getElement(i).getPrice();
                 indexOfRichest = i;
             }
         }
