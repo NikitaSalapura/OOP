@@ -3,7 +3,7 @@ package by.bntu.fitr.poisit.sleepwalkers.task5.model.logic;
 import by.bntu.fitr.poisit.sleepwalkers.task5.model.entity.*;
 import by.bntu.fitr.poisit.sleepwalkers.task5.model.exception.ArrayDimensionException;
 import by.bntu.fitr.poisit.sleepwalkers.task5.model.exception.InvalidValueException;
-import by.bntu.fitr.poisit.sleepwalkers.task5.model.exception.NullException;
+import by.bntu.fitr.poisit.sleepwalkers.task5.model.exception.NullValueException;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -19,17 +19,17 @@ class DecorationsContainerWorkerTest {
             new Toy());
 
     DecorationsContainerWorkerTest()
-            throws InvalidValueException, NullException {
+            throws InvalidValueException, NullValueException {
     }
 
     @Test
-    void getTotalPrice1() {
-        assertThrows(NullException.class,
+    void getTotalPriceForNull() {
+        assertThrows(NullValueException.class,
                 () -> DecorationsContainerWorker.getTotalPrice(null));
     }
 
     @Test
-    void getTotalPrice2() throws ArrayDimensionException, NullException {
+    void getTotalPrice() throws Exception {
         double expected = 19.42;
         double result = DecorationsContainerWorker
                 .getTotalPrice(decorationsContainer);
@@ -37,7 +37,7 @@ class DecorationsContainerWorkerTest {
     }
 
     @Test
-    void getRichestDecoration() throws ArrayDimensionException, NullException {
+    void getRichestDecoration() throws ArrayDimensionException, NullValueException {
         Decoration expected = decorationsContainer.getElement(0);
         Decoration result = DecorationsContainerWorker
                 .getRichestDecoration(decorationsContainer);
@@ -45,7 +45,7 @@ class DecorationsContainerWorkerTest {
     }
 
     @Test
-    void getTotalWeight() throws ArrayDimensionException, NullException {
+    void getTotalWeight() throws ArrayDimensionException, NullValueException {
         double expected = 320;
         double result = DecorationsContainerWorker
                 .getTotalWeight(decorationsContainer);

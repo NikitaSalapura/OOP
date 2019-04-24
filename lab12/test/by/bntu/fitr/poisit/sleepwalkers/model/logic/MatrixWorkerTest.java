@@ -2,7 +2,7 @@ package by.bntu.fitr.poisit.sleepwalkers.model.logic;
 
 import by.bntu.fitr.poisit.sleepwalkers.model.entity.Matrix;
 import by.bntu.fitr.poisit.sleepwalkers.model.exception.MatrixDimensionException;
-import by.bntu.fitr.poisit.sleepwalkers.model.exception.NullException;
+import by.bntu.fitr.poisit.sleepwalkers.model.exception.NullValueException;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -19,7 +19,7 @@ class MatrixWorkerTest {
             {2, 54, -100},
             {11, 23, -51}});
 
-    MatrixWorkerTest() throws MatrixDimensionException, NullException {
+    MatrixWorkerTest() throws MatrixDimensionException, NullValueException {
     }
 //    static {
 //        try {
@@ -37,41 +37,41 @@ class MatrixWorkerTest {
 //    }
 
     @Test
-    void getMaxFromIncreasingRow0() throws MatrixDimensionException, NullException {
-        assertThrows(NullException.class,
+    void getMaxFromIncreasingRow0() throws MatrixDimensionException, NullValueException {
+        assertThrows(NullValueException.class,
                 () -> MatrixWorker.getMaxFromIncreasingRows(null));
     }
 
     @Test
-    void getMaxFromIncreasingRow1() throws MatrixDimensionException, NullException {
+    void getMaxFromIncreasingRow1() throws MatrixDimensionException, NullValueException {
         double expected = 100;
         double result = MatrixWorker.getMaxFromIncreasingRows(matrix1);
         assertEquals(expected, result);
     }
 
     @Test
-    void getMaxFromIncreasingRow2() throws MatrixDimensionException, NullException {
+    void getMaxFromIncreasingRow2() throws MatrixDimensionException, NullValueException {
         double expected = Double.NEGATIVE_INFINITY;
         double result = MatrixWorker.getMaxFromIncreasingRows(matrix2);
         assertEquals(expected, result);
     }
 
     @Test
-    void getMaxSumOfRowElem1() throws MatrixDimensionException, NullException {
+    void getMaxSumOfRowElem1() throws MatrixDimensionException, NullValueException {
         double expected = 85;
         double result = MatrixWorker.getMaxElementsSumOfNotEvenRows(matrix2);
         assertEquals(expected, result);
     }
 
     @Test
-    void getMaxSumOfRowElem2() throws MatrixDimensionException, NullException {
+    void getMaxSumOfRowElem2() throws MatrixDimensionException, NullValueException {
         double expected = Double.NEGATIVE_INFINITY;
         double result = MatrixWorker.getMaxElementsSumOfNotEvenRows(matrix1);
         assertEquals(expected, result);
     }
 
     @Test
-    void testChangePosOfCentralAndMaxElement() throws MatrixDimensionException, NullException {
+    void testChangePosOfCentralAndMaxElement() throws MatrixDimensionException, NullValueException {
         Matrix matrix = new Matrix(new double[][]{
                 {3, 5, 5},
                 {5, 7, 5},
@@ -80,12 +80,12 @@ class MatrixWorkerTest {
                 {3, 5, 5},
                 {5, 8, 5},
                 {7, 5, 7}});
-        Matrix result = MatrixWorker.changePosOfCentralAndMaxElement(matrix);
+        Matrix result = MatrixWorker.getChangedPosOfCentralAndMaxElement(matrix);
         assertEquals(expected.toString(), result.toString());
     }
 
     @Test
-    void isSymmetry1() throws MatrixDimensionException, NullException {
+    void isSymmetry1() throws MatrixDimensionException, NullValueException {
         Matrix matrix = new Matrix(new double[][]{
                 {3, 5},
                 {5, 7}});
@@ -93,12 +93,12 @@ class MatrixWorkerTest {
     }
 
     @Test
-    void isSymmetry2() throws MatrixDimensionException, NullException {
+    void isSymmetry2() throws MatrixDimensionException, NullValueException {
         assertFalse(MatrixWorker.isSymmetrical(matrix1));
     }
 
     @Test
-    void sortMatrixRows() throws MatrixDimensionException, NullException {
+    void sortMatrixRows() throws MatrixDimensionException, NullValueException {
         Matrix expected = new Matrix(new double[][]{
                 {2, 54, 100},
                 {2, 2, 50},

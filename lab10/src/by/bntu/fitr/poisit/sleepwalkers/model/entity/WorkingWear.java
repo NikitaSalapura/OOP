@@ -18,37 +18,31 @@ public class WorkingWear extends Good {
     protected String material;
 
     public WorkingWear() {
-        super();
-        size = DEFAULT_SIZE;
-        color = DEFAULT_COLOR;
-        brand = DEFAULT_BRAND;
-        category = DEFAULT_CATEGORY;
-        material = DEFAULT_MATERIAL;
+        initDefault();
     }
 
-    public WorkingWear(double price) throws InvalidValueException {
+    public WorkingWear(double price) {
         super(price);
     }
 
     public WorkingWear(int size, String color,
                        String brand, String category, String material) {
-        this.size = size;
-        this.color = color;
-        this.brand = brand;
-        this.category = category;
-        this.material = material;
+        super.initDefault();
+        initFields(size, color, brand, category, material);
     }
 
     public WorkingWear(double price, int size, String color,
-                       String brand, String category, String material)
-            throws InvalidValueException {
+                       String brand, String category, String material) {
         super(price);
-        checkSize(size);
-        this.size = size;
-        this.color = color;
-        this.brand = brand;
-        this.category = category;
-        this.material = material;
+        initFields(size, color, brand, category, material);
+    }
+
+    public WorkingWear(WorkingWear workingWear) {
+        if (checkForNonNull(workingWear)) {
+            copyWorkingWear(workingWear);
+        } else {
+            initDefault();
+        }
     }
 
     public int getSize() {
@@ -56,7 +50,7 @@ public class WorkingWear extends Good {
     }
 
     public void setSize(int size) throws InvalidValueException {
-        checkSize(size);
+        checkSizeWithException(size);
         this.size = size;
     }
 
@@ -92,10 +86,46 @@ public class WorkingWear extends Good {
         this.material = material;
     }
 
-    private void checkSize(int size) throws InvalidValueException {
-        if (size < 20) {
+    private boolean checkSize(int size) {
+        return size >= 20;
+    }
+
+    private void checkSizeWithException(int size) throws InvalidValueException {
+        if (!checkSize(size)) {
             throw new InvalidValueException(INVALID_SIZE_MSG);
         }
+    }
+
+    private boolean checkForNonNull(WorkingWear workingWear) {
+        return workingWear != null;
+    }
+
+    protected void copyWorkingWear(WorkingWear workingWear) {
+        super.copyGood(workingWear);
+        this.size = workingWear.size;
+        this.color = workingWear.color;
+        this.brand = workingWear.brand;
+        this.category = workingWear.category;
+        this.material = workingWear.material;
+    }
+
+    protected void initFields(int size, String color,
+                              String brand, String category, String material) {
+        this.size = checkSize(size) ? size : DEFAULT_SIZE;
+        this.color = color;
+        this.brand = brand;
+        this.category = category;
+        this.material = material;
+    }
+
+
+    protected void initDefault() {
+        super.initDefault();
+        size = DEFAULT_SIZE;
+        color = DEFAULT_COLOR;
+        brand = DEFAULT_BRAND;
+        category = DEFAULT_CATEGORY;
+        material = DEFAULT_MATERIAL;
     }
 
     @Override

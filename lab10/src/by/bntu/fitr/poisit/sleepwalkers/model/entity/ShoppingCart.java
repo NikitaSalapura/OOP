@@ -2,7 +2,7 @@ package by.bntu.fitr.poisit.sleepwalkers.model.entity;
 
 
 import by.bntu.fitr.poisit.sleepwalkers.model.exception.ArrayDimensionException;
-import by.bntu.fitr.poisit.sleepwalkers.model.exception.NullException;
+import by.bntu.fitr.poisit.sleepwalkers.model.exception.NullValueException;
 
 import java.util.Arrays;
 
@@ -18,12 +18,12 @@ public class ShoppingCart {
         listOfGoods = new Good[DEFAULT_SIZE];
     }
 
-    public ShoppingCart(Good... listOfGoods) throws NullException {
+    public ShoppingCart(Good... listOfGoods) throws NullValueException {
         checkForNonNull(listOfGoods);
         initArray(listOfGoods);
     }
 
-    public ShoppingCart(ShoppingCart shoppingCart) throws NullException {
+    public ShoppingCart(ShoppingCart shoppingCart) throws NullValueException {
         this(shoppingCart.listOfGoods);
     }
 
@@ -53,9 +53,9 @@ public class ShoppingCart {
         }
     }
 
-    private void checkForNonNull(Good[] array) throws NullException {
+    private void checkForNonNull(Good[] array) throws NullValueException {
         if (array == null) {
-            throw new NullException(NULL_EXCEPTION_MSG);
+            throw new NullValueException(NULL_EXCEPTION_MSG);
         }
     }
 
@@ -73,7 +73,7 @@ public class ShoppingCart {
     }
 
     public void addGooods
-            (Good... array) throws NullException {
+            (Good... array) throws NullValueException {
         checkForNonNull(array);
         add(array);
     }

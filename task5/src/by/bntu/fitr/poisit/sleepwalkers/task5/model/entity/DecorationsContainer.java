@@ -1,7 +1,7 @@
 package by.bntu.fitr.poisit.sleepwalkers.task5.model.entity;
 
 import by.bntu.fitr.poisit.sleepwalkers.task5.model.exception.ArrayDimensionException;
-import by.bntu.fitr.poisit.sleepwalkers.task5.model.exception.NullException;
+import by.bntu.fitr.poisit.sleepwalkers.task5.model.exception.NullValueException;
 
 import java.util.Arrays;
 
@@ -22,13 +22,13 @@ public class DecorationsContainer {
         listOfDecorations = new Decoration[size];
     }
 
-    public DecorationsContainer(Decoration... listOfDecorations) throws NullException {
+    public DecorationsContainer(Decoration... listOfDecorations) throws NullValueException {
         checkForNonNull(listOfDecorations);
         initArray(listOfDecorations);
     }
 
     public DecorationsContainer(DecorationsContainer decorationsContainer)
-            throws NullException {
+            throws NullValueException {
         this(decorationsContainer.listOfDecorations);
     }
 
@@ -53,9 +53,9 @@ public class DecorationsContainer {
         }
     }
 
-    private void checkForNonNull(Decoration[] array) throws NullException {
+    private void checkForNonNull(Decoration[] array) throws NullValueException {
         if (array == null) {
-            throw new NullException(NULL_EXCEPTION_MSG);
+            throw new NullValueException(NULL_EXCEPTION_MSG);
         }
     }
 
@@ -86,7 +86,7 @@ public class DecorationsContainer {
     }
 
     public void addElements
-            (Decoration... listOfElements) throws NullException {
+            (Decoration... listOfElements) throws NullValueException {
         checkForNonNull(listOfElements);
         add(listOfElements);
     }

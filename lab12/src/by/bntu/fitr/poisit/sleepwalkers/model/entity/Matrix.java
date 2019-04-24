@@ -2,7 +2,7 @@ package by.bntu.fitr.poisit.sleepwalkers.model.entity;
 
 
 import by.bntu.fitr.poisit.sleepwalkers.model.exception.MatrixDimensionException;
-import by.bntu.fitr.poisit.sleepwalkers.model.exception.NullException;
+import by.bntu.fitr.poisit.sleepwalkers.model.exception.NullValueException;
 
 public class Matrix {
     public static final int DEFAULT_SIZE = 5;
@@ -10,6 +10,7 @@ public class Matrix {
 
     private static final String DIMENSION_EXCEPTION_MSG = "Wrong matrix dimension!";
     private static final String NULL_EXCEPTION_MSG = "Null matrix is not allowed!";
+
     private double[][] array;
 
     public Matrix() {
@@ -42,13 +43,13 @@ public class Matrix {
 
 
     public Matrix(double[][] array)
-            throws NullException {
+            throws NullValueException {
         checkForNonNull(array);
-        initMatrix(array);
+        copyMatrix(array);
     }
 
     public Matrix(Matrix matrix)
-            throws NullException {
+            throws NullValueException {
         this(matrix.array);
     }
 
@@ -66,15 +67,15 @@ public class Matrix {
         }
     }
 
-    private void checkForNonNull(double[][] array) throws NullException {
+    private void checkForNonNull(double[][] array) throws NullValueException {
         if (array == null) {
-            throw new NullException(NULL_EXCEPTION_MSG);
+            throw new NullValueException(NULL_EXCEPTION_MSG);
         }
     }
 
-    private void checkForNonNull(Matrix matrix) throws NullException {
+    private void checkForNonNull(Matrix matrix) throws NullValueException {
         if (matrix == null) {
-            throw new NullException(NULL_EXCEPTION_MSG);
+            throw new NullValueException(NULL_EXCEPTION_MSG);
         }
     }
 
@@ -100,7 +101,7 @@ public class Matrix {
         array[i][j] = element;
     }
 
-    public void setMatrix(Matrix matrix) throws NullException {
+    public void setMatrix(Matrix matrix) throws NullValueException {
         checkForNonNull(matrix);
         array = new double[matrix.getRowsCount()][matrix.getColumnsCount()];
         for (int i = 0; i < array.length; i++) {
@@ -110,7 +111,7 @@ public class Matrix {
         }
     }
 
-    public void initMatrix(double[][] array) {
+    private void copyMatrix(double[][] array) {
         this.array = new double[array.length][array[0].length];
         for (int i = 0; i < array.length; i++) {
             if (array[i].length >= 0) {

@@ -11,26 +11,22 @@ public class Suit extends WorkingWear {
     protected int height;
 
     public Suit() {
-        super();
-        height = DEFAULT_HEIGHT;
+        initDefault();
     }
 
-    public Suit(double price)
-            throws InvalidValueException {
+    public Suit(double price) {
         super(price);
     }
 
-    public Suit(int height) throws InvalidValueException {
-        checkHeight(height);
-        this.height = height;
+    public Suit(int height) {
+        super.initDefault();
+        initFields(height);
     }
 
     public Suit(double price, int size, String color,
-                String brand, String category, String material, int height)
-            throws InvalidValueException {
+                String brand, String category, String material, int height) {
         super(price, size, color, brand, category, material);
-        checkHeight(height);
-        this.height = height;
+        initFields(height);
     }
 
     public int getHeight() {
@@ -38,15 +34,29 @@ public class Suit extends WorkingWear {
     }
 
     public void setHeight(int height) throws InvalidValueException {
-        checkHeight(height);
+        checkHeightWithException(height);
         this.height = height;
     }
 
-    private void checkHeight(int height) throws InvalidValueException {
-        if (height < 120) {
+    private boolean checkHeight(int height) {
+        return height >= 120;
+    }
+
+    private void checkHeightWithException(int height) throws InvalidValueException {
+        if (!checkHeight(height)) {
             throw new InvalidValueException(INVALID_HEIGHT_MSG);
         }
     }
+
+    protected void initDefault() {
+        super.initDefault();
+        height = DEFAULT_HEIGHT;
+    }
+
+    protected void initFields(int height) {
+        this.height = checkHeight(height) ? height : DEFAULT_HEIGHT;
+    }
+
 
     @Override
     public String toString() {

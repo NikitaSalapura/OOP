@@ -1,7 +1,6 @@
 package by.bntu.fitr.poisit.sleepwalkers.task5.model.entity;
 
 import by.bntu.fitr.poisit.sleepwalkers.task5.model.exception.InvalidValueException;
-import by.bntu.fitr.poisit.sleepwalkers.task5.model.exception.NullException;
 
 
 public class Decoration {

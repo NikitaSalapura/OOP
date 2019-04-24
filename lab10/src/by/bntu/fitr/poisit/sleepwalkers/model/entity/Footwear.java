@@ -1,7 +1,5 @@
 package by.bntu.fitr.poisit.sleepwalkers.model.entity;
 
-import by.bntu.fitr.poisit.sleepwalkers.model.exception.InvalidValueException;
-
 
 public class Footwear extends WorkingWear {
 
@@ -10,29 +8,37 @@ public class Footwear extends WorkingWear {
     protected String sole;
 
     public Footwear() {
-        sole = DEFAULT_SOLE;
+        initDefault();
     }
 
 
-    public Footwear(double price) throws InvalidValueException {
+    public Footwear(double price) {
         super(price);
     }
 
     public Footwear(String sole) {
-        this.sole = sole;
+        super.initDefault();
+        initFields(sole);
     }
 
     public Footwear(int size, String color,
                     String brand, String category, String material, String sole) {
         super(size, color, brand, category, material);
-        this.sole = sole;
+        initFields(sole);
     }
 
     public Footwear(double price, int size, String color,
-                    String brand, String category, String material, String sole)
-            throws InvalidValueException {
+                    String brand, String category, String material, String sole) {
         super(price, size, color, brand, category, material);
-        this.sole = sole;
+        initFields(sole);
+    }
+
+    public Footwear(Footwear footwear) {
+        if (checkForNonNull(footwear)) {
+            copyWorkingWear(footwear);
+        } else {
+            initDefault();
+        }
     }
 
     public String getSole() {
@@ -40,6 +46,19 @@ public class Footwear extends WorkingWear {
     }
 
     public void setSole(String sole) {
+        this.sole = sole;
+    }
+
+    private boolean checkForNonNull(Footwear footwear) {
+        return footwear != null;
+    }
+
+    protected void initDefault() {
+        super.initDefault();
+        sole = DEFAULT_SOLE;
+    }
+
+    private void initFields(String sole) {
         this.sole = sole;
     }
 

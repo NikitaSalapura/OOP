@@ -2,13 +2,36 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c873006b-aecf-4f33-b3d9-579746428505" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../q.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/by/bntu/fitr/poisit/sleepwalkers/model/entity/Matrix.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/bntu/fitr/poisit/sleepwalkers/model/entity/Matrix.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/by/bntu/fitr/poisit/sleepwalkers/model/logic/MatrixWorkerFromNikita.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/bntu/fitr/poisit/sleepwalkers/model/logic/MatrixWorkerFromNikita.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/by/bntu/fitr/poisit/sleepwalkers/model/logic/MatrixWorkerFromVlad.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/bntu/fitr/poisit/sleepwalkers/model/logic/MatrixWorkerFromVlad.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/by/bntu/fitr/poisit/sleepwalkers/model/logic/MatrixWorkerFromNikitaTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/by/bntu/fitr/poisit/sleepwalkers/model/logic/MatrixWorkerFromNikitaTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/by/bntu/fitr/poisit/sleepwalkers/model/logic/MatrixWorkerFromVladTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/by/bntu/fitr/poisit/sleepwalkers/model/logic/MatrixWorkerFromVladTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab12/src/by/bntu/fitr/poisit/sleepwalkers/model/exception/NullValueException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../task5/src/by/bntu/fitr/poisit/sleepwalkers/task5/model/exception/NullValueException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab10/src/by/bntu/fitr/poisit/sleepwalkers/model/entity/Good.java" beforeDir="false" afterPath="$PROJECT_DIR$/../lab10/src/by/bntu/fitr/poisit/sleepwalkers/model/entity/Good.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab10/src/by/bntu/fitr/poisit/sleepwalkers/model/entity/ShoppingCart.java" beforeDir="false" afterPath="$PROJECT_DIR$/../lab10/src/by/bntu/fitr/poisit/sleepwalkers/model/entity/ShoppingCart.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab10/src/by/bntu/fitr/poisit/sleepwalkers/model/exception/NullException.java" beforeDir="false" afterPath="$PROJECT_DIR$/../lab10/src/by/bntu/fitr/poisit/sleepwalkers/model/exception/NullValueException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab10/src/by/bntu/fitr/poisit/sleepwalkers/model/logic/ShoppingCartHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/../lab10/src/by/bntu/fitr/poisit/sleepwalkers/model/logic/ShoppingCartHelper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab10/test/by/bntu/fitr/poisit/sleepwalkers/model/logic/ShoppingCartHelperTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../lab10/test/by/bntu/fitr/poisit/sleepwalkers/model/logic/ShoppingCartHelperTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab12/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../lab12/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab12/out/artifacts/lab12_jar/lab12.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../lab12/out/artifacts/lab12_jar/lab12.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab12/out/production/lab12/by/bntu/fitr/poisit/sleepwalkers/controller/Lab12.class" beforeDir="false" afterPath="$PROJECT_DIR$/../lab12/out/production/lab12/by/bntu/fitr/poisit/sleepwalkers/controller/Lab12.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab12/out/production/lab12/by/bntu/fitr/poisit/sleepwalkers/model/entity/Matrix.class" beforeDir="false" afterPath="$PROJECT_DIR$/../lab12/out/production/lab12/by/bntu/fitr/poisit/sleepwalkers/model/entity/Matrix.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab12/out/production/lab12/by/bntu/fitr/poisit/sleepwalkers/model/exception/NullException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab12/out/production/lab12/by/bntu/fitr/poisit/sleepwalkers/model/logic/MatrixWorker.class" beforeDir="false" afterPath="$PROJECT_DIR$/../lab12/out/production/lab12/by/bntu/fitr/poisit/sleepwalkers/model/logic/MatrixWorker.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab12/out/test/lab12/by/bntu/fitr/poisit/sleepwalkers/model/logic/MatrixWorkerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/../lab12/out/test/lab12/by/bntu/fitr/poisit/sleepwalkers/model/logic/MatrixWorkerTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab12/src/by/bntu/fitr/poisit/sleepwalkers/controller/Lab12.java" beforeDir="false" afterPath="$PROJECT_DIR$/../lab12/src/by/bntu/fitr/poisit/sleepwalkers/controller/Lab12.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab12/src/by/bntu/fitr/poisit/sleepwalkers/model/entity/Matrix.java" beforeDir="false" afterPath="$PROJECT_DIR$/../lab12/src/by/bntu/fitr/poisit/sleepwalkers/model/entity/Matrix.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab12/src/by/bntu/fitr/poisit/sleepwalkers/model/exception/NullException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab12/src/by/bntu/fitr/poisit/sleepwalkers/model/logic/MatrixWorker.java" beforeDir="false" afterPath="$PROJECT_DIR$/../lab12/src/by/bntu/fitr/poisit/sleepwalkers/model/logic/MatrixWorker.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab12/test/by/bntu/fitr/poisit/sleepwalkers/model/logic/MatrixWorkerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../lab12/test/by/bntu/fitr/poisit/sleepwalkers/model/logic/MatrixWorkerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../task5/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../task5/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../task5/out/production/task5/by/bntu/fitr/poisit/sleepwalkers/task5/model/entity/Decoration.class" beforeDir="false" afterPath="$PROJECT_DIR$/../task5/out/production/task5/by/bntu/fitr/poisit/sleepwalkers/task5/model/entity/Decoration.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../task5/out/production/task5/by/bntu/fitr/poisit/sleepwalkers/task5/model/entity/DecorationsContainer.class" beforeDir="false" afterPath="$PROJECT_DIR$/../task5/out/production/task5/by/bntu/fitr/poisit/sleepwalkers/task5/model/entity/DecorationsContainer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../task5/out/production/task5/by/bntu/fitr/poisit/sleepwalkers/task5/model/exception/NullException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../task5/out/production/task5/by/bntu/fitr/poisit/sleepwalkers/task5/model/logic/DecorationsContainerWorker.class" beforeDir="false" afterPath="$PROJECT_DIR$/../task5/out/production/task5/by/bntu/fitr/poisit/sleepwalkers/task5/model/logic/DecorationsContainerWorker.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../task5/out/test/task5/by/bntu/fitr/poisit/sleepwalkers/task5/model/logic/DecorationsContainerWorkerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/../task5/out/test/task5/by/bntu/fitr/poisit/sleepwalkers/task5/model/logic/DecorationsContainerWorkerTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../task5/src/by/bntu/fitr/poisit/sleepwalkers/task5/model/entity/Decoration.java" beforeDir="false" afterPath="$PROJECT_DIR$/../task5/src/by/bntu/fitr/poisit/sleepwalkers/task5/model/entity/Decoration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../task5/src/by/bntu/fitr/poisit/sleepwalkers/task5/model/entity/DecorationsContainer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../task5/src/by/bntu/fitr/poisit/sleepwalkers/task5/model/entity/DecorationsContainer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../task5/src/by/bntu/fitr/poisit/sleepwalkers/task5/model/exception/NullException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../task5/src/by/bntu/fitr/poisit/sleepwalkers/task5/model/logic/DecorationsContainerWorker.java" beforeDir="false" afterPath="$PROJECT_DIR$/../task5/src/by/bntu/fitr/poisit/sleepwalkers/task5/model/logic/DecorationsContainerWorker.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../task5/test/by/bntu/fitr/poisit/sleepwalkers/task5/model/logic/DecorationsContainerWorkerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../task5/test/by/bntu/fitr/poisit/sleepwalkers/task5/model/logic/DecorationsContainerWorkerTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -19,11 +42,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="450">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/by/bntu/fitr/poisit/sleepwalkers/model/logic/MatrixWorkerFromNikita.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="100">
-              <caret line="5" column="11" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="11" />
+            <state relative-caret-position="225">
+              <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
             </state>
           </provider>
         </entry>
@@ -31,8 +54,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/by/bntu/fitr/poisit/sleepwalkers/model/logic/MatrixWorkerFromNikitaTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="175">
-              <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+            <state relative-caret-position="225">
+              <caret line="12" selection-start-line="12" selection-end-line="12" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -43,25 +66,13 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/by/bntu/fitr/poisit/sleepwalkers/model/entity/Matrix.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="43" lean-forward="true" selection-start-line="43" selection-end-line="43" />
+            <state relative-caret-position="725">
+              <caret line="43" selection-start-line="43" selection-end-line="43" />
               <folding>
                 <element signature="e#176#177#0" expanded="true" />
                 <element signature="e#238#239#0" expanded="true" />
                 <element signature="e#277#278#0" expanded="true" />
                 <element signature="e#311#312#0" expanded="true" />
-                <element signature="e#355#356#0" expanded="true" />
-                <element signature="e#404#405#0" expanded="true" />
-                <element signature="e#435#436#0" expanded="true" />
-                <element signature="e#467#468#0" expanded="true" />
-                <element signature="e#780#781#0" expanded="true" />
-                <element signature="e#815#816#0" expanded="true" />
-                <element signature="e#851#852#0" expanded="true" />
-                <element signature="e#889#890#0" expanded="true" />
-                <element signature="e#935#936#0" expanded="true" />
-                <element signature="e#969#970#0" expanded="true" />
-                <element signature="e#1029#1030#0" expanded="true" />
-                <element signature="e#1066#1067#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -70,8 +81,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/by/bntu/fitr/poisit/sleepwalkers/model/logic/MatrixWorkerFromVladTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="223">
-              <caret line="98" column="5" lean-forward="true" selection-start-line="98" selection-start-column="5" selection-end-line="98" selection-end-column="5" />
+            <state relative-caret-position="2375">
+              <caret line="98" column="5" selection-start-line="98" selection-start-column="5" selection-end-line="98" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -79,11 +90,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/by/bntu/fitr/poisit/sleepwalkers/model/logic/MatrixWorkerFromVlad.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="79">
-              <caret line="76" column="34" lean-forward="true" selection-start-line="76" selection-start-column="34" selection-end-line="76" selection-end-column="34" />
+            <state relative-caret-position="1850">
+              <caret line="76" column="34" selection-start-line="76" selection-start-column="34" selection-end-line="76" selection-end-column="34" />
             </state>
           </provider>
         </entry>
@@ -132,10 +143,10 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-7" />
-    <option name="y" value="-34" />
-    <option name="width" value="1021" />
-    <option name="height" value="752" />
+    <option name="x" value="394" />
+    <option name="y" value="-25" />
+    <option name="width" value="1113" />
+    <option name="height" value="700" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -143,7 +154,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -191,6 +201,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -202,7 +213,7 @@
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="create.test.in.the.same.root" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../lab12" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -371,7 +382,7 @@
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="-9" width="1298" height="770" extended-state="6" />
+    <frame x="-9" y="-9" width="1618" height="870" extended-state="6" />
     <layout>
       <window_info id="Image Layers" order="0" />
       <window_info id="Designer" order="1" />
@@ -379,7 +390,7 @@
       <window_info id="simpleUML" order="3" show_stripe_button="false" />
       <window_info id="Capture Tool" order="4" />
       <window_info id="Favorites" order="5" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="6" weight="0.25619835" />
+      <window_info active="true" content_ui="combo" id="Project" order="6" visible="true" weight="0.25555557" />
       <window_info id="Structure" order="7" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="0" weight="0.32840237" />
       <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" weight="0.3298969" />
@@ -428,13 +439,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../../task Sharaev, variant 6/lab12/Lab12.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="5" column="14" lean-forward="true" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/../../task Sharaev, variant 6/lab12/Lab12.java" />
     <entry file="file://$PROJECT_DIR$/src/by/bntu/fitr/poisit/nikita/model/entity.java" />
     <entry file="file://$PROJECT_DIR$/src/by/bntu/fitr/poisit/sleepwalkers/model/logic/ArrayWorker.class" />
     <entry file="file://$PROJECT_DIR$/src/by/bntu/fitr/poisit/sleepwalkers/util/UserInput.java" />
@@ -458,17 +463,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/by/bntu/fitr/poisit/sleepwalkers/model/logic/MatrixWorkerFromNikita.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="5" column="11" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test/by/bntu/fitr/poisit/sleepwalkers/model/logic/MatrixWorkerFromNikitaTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+        <state relative-caret-position="225">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -477,33 +475,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/by/bntu/fitr/poisit/sleepwalkers/model/entity/Matrix.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="43" lean-forward="true" selection-start-line="43" selection-end-line="43" />
+        <state relative-caret-position="725">
+          <caret line="43" selection-start-line="43" selection-end-line="43" />
           <folding>
             <element signature="e#176#177#0" expanded="true" />
             <element signature="e#238#239#0" expanded="true" />
             <element signature="e#277#278#0" expanded="true" />
             <element signature="e#311#312#0" expanded="true" />
-            <element signature="e#355#356#0" expanded="true" />
-            <element signature="e#404#405#0" expanded="true" />
-            <element signature="e#435#436#0" expanded="true" />
-            <element signature="e#467#468#0" expanded="true" />
-            <element signature="e#780#781#0" expanded="true" />
-            <element signature="e#815#816#0" expanded="true" />
-            <element signature="e#851#852#0" expanded="true" />
-            <element signature="e#889#890#0" expanded="true" />
-            <element signature="e#935#936#0" expanded="true" />
-            <element signature="e#969#970#0" expanded="true" />
-            <element signature="e#1029#1030#0" expanded="true" />
-            <element signature="e#1066#1067#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test/by/bntu/fitr/poisit/sleepwalkers/model/logic/MatrixWorkerFromVladTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="223">
-          <caret line="98" column="5" lean-forward="true" selection-start-line="98" selection-start-column="5" selection-end-line="98" selection-end-column="5" />
+        <state relative-caret-position="2375">
+          <caret line="98" column="5" selection-start-line="98" selection-start-column="5" selection-end-line="98" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -512,8 +498,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/by/bntu/fitr/poisit/sleepwalkers/model/logic/MatrixWorkerFromVlad.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="79">
-          <caret line="76" column="34" lean-forward="true" selection-start-line="76" selection-start-column="34" selection-end-line="76" selection-end-column="34" />
+        <state relative-caret-position="1850">
+          <caret line="76" column="34" selection-start-line="76" selection-start-column="34" selection-end-line="76" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/by/bntu/fitr/poisit/sleepwalkers/model/logic/MatrixWorkerFromNikita.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
         </state>
       </provider>
     </entry>
