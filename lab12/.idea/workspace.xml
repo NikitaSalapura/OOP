@@ -7,12 +7,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8375dc7f-bf41-46a5-a64f-00e1689f27cc" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logging.log" beforeDir="false" afterPath="$PROJECT_DIR$/logging.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/lab12_jar/lab12.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/lab12_jar/lab12.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/lab12/META-INF/lab12.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/lab12/by/bntu/fitr/poisit/sleepwalkers/model/logic/MatrixWorkerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/lab12/by/bntu/fitr/poisit/sleepwalkers/model/logic/MatrixWorkerTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/by/bntu/fitr/poisit/sleepwalkers/model/entity/Matrix.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/bntu/fitr/poisit/sleepwalkers/model/entity/Matrix.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/by/bntu/fitr/poisit/sleepwalkers/model/entity/Matrix.java" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -22,8 +17,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="DefaultGradleProjectSettings">
-    <option name="testRunner" value="GRADLE" />
-    <option name="delegatedBuild" value="true" />
+    <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="450">
@@ -53,23 +47,23 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/by/bntu/fitr/poisit/sleepwalkers/model/entity/Matrix.java">
+        <entry file="file://$PROJECT_DIR$/../../../javaYaP/labs/lab5/src/Matrix.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="175">
-              <caret line="71" column="5" lean-forward="true" selection-start-line="71" selection-start-column="5" selection-end-line="71" selection-end-column="5" />
+            <state relative-caret-position="325">
+              <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#555#556#0" expanded="true" />
                 <element signature="e#617#618#0" expanded="true" />
-                <element signature="e#839#840#0" expanded="true" />
-                <element signature="e#1242#1243#0" expanded="true" />
-                <element signature="e#1316#1317#0" expanded="true" />
-                <element signature="e#1407#1408#0" expanded="true" />
+                <element signature="e#790#791#0" expanded="true" />
+                <element signature="e#1193#1194#0" expanded="true" />
+                <element signature="e#1267#1268#0" expanded="true" />
+                <element signature="e#1358#1359#0" expanded="true" />
                 <element signature="e#1567#1568#0" expanded="true" />
                 <element signature="e#1603#1604#0" expanded="true" />
                 <element signature="e#1548#1549#0" expanded="true" />
                 <element signature="e#1585#1586#0" expanded="true" />
-                <element signature="e#2922#2923#0" expanded="true" />
+                <element signature="e#2873#2874#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -163,12 +157,13 @@
         <option value="$PROJECT_DIR$/test/by/bntu/fitr/poisit/sleepwalkers/model/logic/MatrixWorkerTest.java" />
         <option value="$PROJECT_DIR$/src/by/bntu/fitr/poisit/sleepwalkers/controller/Lab12.java" />
         <option value="$PROJECT_DIR$/src/by/bntu/fitr/poisit/sleepwalkers/model/entity/Matrix.java" />
+        <option value="$PROJECT_DIR$/../../../javaYaP/labs/lab5/src/Matrix.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="118" />
-    <option name="y" value="17" />
+    <option name="x" value="-256" />
+    <option name="y" value="-20" />
     <option name="width" value="1113" />
     <option name="height" value="700" />
   </component>
@@ -311,7 +306,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Lab12">
+  <component name="RunManager" selected="JUnit.MatrixWorkerTest">
     <configuration name="Lab12" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="by.bntu.fitr.poisit.sleepwalkers.controller.Lab12" />
       <module name="lab12" />
@@ -321,6 +316,14 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="All in lab12" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="lab12" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -372,29 +375,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MatrixWorkerTest.sortMatrixRows" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="lab12" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="by.bntu.fitr.poisit.sleepwalkers.model.logic.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="by.bntu.fitr.poisit.sleepwalkers.model.logic" />
-      <option name="MAIN_CLASS_NAME" value="by.bntu.fitr.poisit.sleepwalkers.model.logic.MatrixWorkerTest" />
-      <option name="METHOD_NAME" value="sortMatrixRows" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.MatrixWorkerTest" />
+        <item itemvalue="JUnit.All in lab12" />
         <item itemvalue="Application.Lab12" />
         <item itemvalue="JUnit.MatrixWorkerTest.isSymmetry1" />
-        <item itemvalue="JUnit.MatrixWorkerTest" />
         <item itemvalue="JUnit.MatrixWorkerTest.getMaxFromIncreasingRow0" />
-        <item itemvalue="JUnit.MatrixWorkerTest.sortMatrixRows" />
       </list>
     </recent_temporary>
   </component>
@@ -472,7 +459,14 @@
       <option name="project" value="LOCAL" />
       <updated>1555278394530</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="good matrix">
+      <created>1557233641532</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1557233641532</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -517,7 +511,7 @@
       <window_info id="simpleUML" order="3" show_stripe_button="false" />
       <window_info id="Capture Tool" order="4" />
       <window_info id="Favorites" order="5" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="6" sideWeight="0.4992636" weight="0.26209152" />
+      <window_info active="true" content_ui="combo" id="Project" order="6" sideWeight="0.4992636" visible="true" weight="0.26209152" />
       <window_info id="Structure" order="7" sideWeight="0.50073636" side_tool="true" weight="0.26862746" />
       <window_info anchor="bottom" id="Thumbnails" order="0" weight="0.3298969" />
       <window_info anchor="bottom" id="Terminal" order="1" />
@@ -555,7 +549,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="lab12" />
-    <option name="LAST_COMMIT_MESSAGE" value="lab12" />
+    <MESSAGE value="good matrix" />
+    <option name="LAST_COMMIT_MESSAGE" value="good matrix" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -812,23 +807,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/by/bntu/fitr/poisit/sleepwalkers/model/entity/Matrix.java">
+    <entry file="file://$PROJECT_DIR$/../../../javaYaP/labs/lab5/src/Matrix.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="71" column="5" lean-forward="true" selection-start-line="71" selection-start-column="5" selection-end-line="71" selection-end-column="5" />
+        <state relative-caret-position="325">
+          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#555#556#0" expanded="true" />
             <element signature="e#617#618#0" expanded="true" />
-            <element signature="e#839#840#0" expanded="true" />
-            <element signature="e#1242#1243#0" expanded="true" />
-            <element signature="e#1316#1317#0" expanded="true" />
-            <element signature="e#1407#1408#0" expanded="true" />
+            <element signature="e#790#791#0" expanded="true" />
+            <element signature="e#1193#1194#0" expanded="true" />
+            <element signature="e#1267#1268#0" expanded="true" />
+            <element signature="e#1358#1359#0" expanded="true" />
             <element signature="e#1567#1568#0" expanded="true" />
             <element signature="e#1603#1604#0" expanded="true" />
             <element signature="e#1548#1549#0" expanded="true" />
             <element signature="e#1585#1586#0" expanded="true" />
-            <element signature="e#2922#2923#0" expanded="true" />
+            <element signature="e#2873#2874#0" expanded="true" />
           </folding>
         </state>
       </provider>

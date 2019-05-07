@@ -19,59 +19,42 @@ class MatrixWorkerTest {
             {2, 54, -100},
             {11, 23, -51}});
 
-    MatrixWorkerTest() throws MatrixDimensionException, NullValueException {
-    }
-//    static {
-//        try {
-//            matrix1 = new Matrix(new double[][]{
-//                    {12.2, 23.2, -2},
-//                    {2, 54, 100},
-//                    {2, 2, 50}});
-//            matrix2 = new Matrix(new double[][]{
-//                    {12.2, 23.2, -11},
-//                    {2, 54, -100},
-//                    {11, 23, -51}});
-//        } catch (MatrixDimensionException ex) {
-//            fail();
-//        }
-//    }
-
     @Test
-    void getMaxFromIncreasingRow0() throws MatrixDimensionException, NullValueException {
+    void getMaxFromIncreasingRow0() {
         assertThrows(NullValueException.class,
                 () -> MatrixWorker.getMaxFromIncreasingRows(null));
     }
 
     @Test
-    void getMaxFromIncreasingRow1() throws MatrixDimensionException, NullValueException {
+    void getMaxFromIncreasingRow1() throws Exception {
         double expected = 100;
         double result = MatrixWorker.getMaxFromIncreasingRows(matrix1);
         assertEquals(expected, result);
     }
 
     @Test
-    void getMaxFromIncreasingRow2() throws MatrixDimensionException, NullValueException {
+    void getMaxFromIncreasingRow2() throws Exception {
         double expected = Double.NEGATIVE_INFINITY;
         double result = MatrixWorker.getMaxFromIncreasingRows(matrix2);
         assertEquals(expected, result);
     }
 
     @Test
-    void getMaxSumOfRowElem1() throws MatrixDimensionException, NullValueException {
+    void getMaxSumOfRowElem1() throws Exception {
         double expected = 85;
         double result = MatrixWorker.getMaxElementsSumOfNotEvenRows(matrix2);
         assertEquals(expected, result);
     }
 
     @Test
-    void getMaxSumOfRowElem2() throws MatrixDimensionException, NullValueException {
+    void getMaxSumOfRowElem2() throws Exception {
         double expected = Double.NEGATIVE_INFINITY;
         double result = MatrixWorker.getMaxElementsSumOfNotEvenRows(matrix1);
         assertEquals(expected, result);
     }
 
     @Test
-    void testChangePosOfCentralAndMaxElement() throws MatrixDimensionException, NullValueException {
+    void testChangePosOfCentralAndMaxElement() throws Exception {
         Matrix matrix = new Matrix(new double[][]{
                 {3, 5, 5},
                 {5, 7, 5},
@@ -85,7 +68,7 @@ class MatrixWorkerTest {
     }
 
     @Test
-    void isSymmetry1() throws MatrixDimensionException, NullValueException {
+    void isSymmetry1() throws Exception {
         Matrix matrix = new Matrix(new double[][]{
                 {3, 5},
                 {5, 7}});
@@ -93,12 +76,12 @@ class MatrixWorkerTest {
     }
 
     @Test
-    void isSymmetry2() throws MatrixDimensionException, NullValueException {
+    void isSymmetry2() throws Exception {
         assertFalse(MatrixWorker.isSymmetrical(matrix1));
     }
 
     @Test
-    void sortMatrixRows() throws MatrixDimensionException, NullValueException {
+    void sortMatrixRows() throws Exception {
         Matrix expected = new Matrix(new double[][]{
                 {2, 54, 100},
                 {2, 2, 50},
